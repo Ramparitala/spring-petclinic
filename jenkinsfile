@@ -9,6 +9,7 @@ node{
       }
      stage('Archive') {
        // Archiving artifacts.
-       archiveArtifacts 'target/*.jar'  
+       archiveArtifacts 'target/*.jar'
+       junit 'target/surefire-reports/*.xml'
      }
 }
