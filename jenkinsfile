@@ -1,4 +1,4 @@
-node{
+node('ip-10-10-0-125.ec2.internal'){
      stage('SCM') {
          //git clone
          git 'https://github.com/Ramparitala/spring-petclinic.git'
